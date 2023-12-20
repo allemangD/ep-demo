@@ -114,8 +114,6 @@ This command actually executes all the steps for each ExternalProject, in order 
 this example it's roughly equivalent to this (excluding unused steps like `download`).
 
 ```shell
-cmake --build build --target fmt
-cmake --build build --target inner
 cmake --build build -t fmt
 cmake --build build -t inner-prefix/src/inner-stamp/inner-configure
 cmake --build build -t inner-prefix/src/inner-stamp/inner-build
