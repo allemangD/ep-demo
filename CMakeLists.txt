@@ -3,6 +3,8 @@ project(ep-demo)
 
 option(USE_SUPERBUILD "Build ${PROJECT_NAME} and its dependencies." ON)
 
+option(USE_SYSTEM_FMT "Use fmt installed on system path." OFF)
+
 if (USE_SUPERBUILD)
   include(SuperBuild.cmake)
   return()
